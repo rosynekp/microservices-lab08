@@ -41,7 +41,7 @@ The structure and functionality of the API is inspired by the tutorial written b
 
 ## **Local Application**
 
-Note: Due to the large number of endpoints I only took screenshots of a few of the most important ones.
+Note: Due to the large number of endpoints I only took screenshots of a few of the more important ones.
 
 ### GET /
 ![home local](./screenshots/home_local.png)
@@ -81,7 +81,7 @@ url: https://hub.docker.com/repository/docker/rosynekp/lab08/general
 ### Docker Hub
 ![dockerhub](./screenshots/dockerhub.png)'
 
-## **Deployed Application**
+## **Deployed Application - All Endpoints**
 
 ### Deploy - Command Line
 ![deployed cmd](./screenshots/deploy_cmd.png)'
