@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lab08
+  labels:
+    app: lab08
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lab08
+  # pod spec begins here
+  template:
+    metadata:
+      labels:
+        app: lab08
+    spec:
+      containers:
+        - name: lab08
+          image: registry.digitalocean.com/lab08/lab08
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5000

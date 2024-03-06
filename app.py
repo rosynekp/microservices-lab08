@@ -59,14 +59,14 @@ def get_insect_by_id(insectID):
     return jsonify(ItemService(table=table_name).get_by_id(insectID))
 
 
-@app.route('/insect/name', methods=["POST"])
+@app.route('/insects/name', methods=["POST"])
 def get_insect_by_name():
     """Returns insect by name"""
     table_name = 'insect'
     return jsonify(ItemService(table=table_name).get_by_name(request.get_json()))
 
 
-@app.route('/filter/insect/sell', methods=["POST"])
+@app.route('/filter/insects/sell', methods=["POST"])
 def insect_filter_by_sell():
     """Returns insect filtered by sell price"""
     table_name = 'insect'
